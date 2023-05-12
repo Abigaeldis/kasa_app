@@ -3,9 +3,11 @@
   width: 340px;
   height: 340px;
   margin: auto;
+  border-radius: 10px;
 }
 
 .card img {
   object-fit: cover;
   width: 100%;
+  border-radius: 10px;
 }
