@@ -1,8 +1,8 @@
-import "../styles/App.css";
+import "../styles/Home.css";
 import Header from "../components/Header";
 import Gallery from "../components/Gallery";
 
-function App() {
+function Home() {
   return (
     <div>
       <Header />
@@ -11,4 +11,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
