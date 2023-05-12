@@ -1,12 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./styles/index.css";
-import App from "./App";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import App from "./pages/Home";
+import OpenedLodging from "./pages/OpenedLodging";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/logement" element={<OpenedLodging />} />
+      </Routes>
+      <App />
+    </Router>
   </React.StrictMode>
 );
 
