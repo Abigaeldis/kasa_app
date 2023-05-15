@@ -3,7 +3,7 @@ import logoK from "../assets/vectorK.png";
 import logoS from "../assets/vectorS.png";
 import logoA from "../assets/vectorA.png";
 import paysage01 from "../assets/paysage01.png";
-import "../styles/Header.css";
+import "../styles/header.css";
 
 function Header() {
   return (

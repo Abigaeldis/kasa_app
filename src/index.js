@@ -5,6 +5,8 @@ import "./styles/index.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import OpenedLodging from "./pages/OpenedLodging";
+import APropos from "./pages/APropos";
+import NotFound from "./pages/NotFound";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -13,6 +15,8 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/logement" element={<OpenedLodging />} />
+        <Route path="/a-propos" element={<APropos />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   </React.StrictMode>

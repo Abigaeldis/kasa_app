@@ -2,7 +2,7 @@ import "../styles/home.css";
 import Header from "../components/Header";
 import Gallery from "../components/Gallery";
 
-function Home() {
+function APropos() {
   return (
     <div>
       <Header />
@@ -11,4 +11,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default APropos;
