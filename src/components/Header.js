@@ -5,7 +5,7 @@ import logoA from "../assets/vectorA.png";
 import paysage01 from "../assets/paysage01.png";
 import "../styles/header.css";
 
-function Header() {
+function Header({ showBanner }) {
   return (
     <div className="header">
       <div className="navbar">
@@ -25,10 +25,12 @@ function Header() {
           </a>
         </div>
       </div>
-      <div className="banner">
-        <img src={paysage01} alt="paysage côtier" />
-        <p>Chez vous, partout et ailleurs</p>
-      </div>
+      {showBanner && (
+        <div className="banner">
+          <img src={paysage01} alt="paysage côtier" />
+          <p>Chez vous, partout et ailleurs</p>
+        </div>
+      )}
     </div>
   );
 }

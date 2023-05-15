@@ -5,7 +5,7 @@ import Gallery from "../components/Gallery";
 function APropos() {
   return (
     <div>
-      <Header />
+      <Header showBanner={false} />
       <Gallery />
     </div>
   );
