@@ -11,7 +11,7 @@ function Gallery() {
           title={lodging.title}
           image={lodging.pictures[0]}
           //   description={lodging.description}
-          //   link={`/${lodging.id}`}
+          link={`/${lodging.id}`}
         />
       ))}
     </div>

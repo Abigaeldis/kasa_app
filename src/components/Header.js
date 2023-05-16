@@ -18,10 +18,10 @@ function Header({ showBanner, bannerImageSrc }) {
           <img src={logoA} alt="LogoA" />
         </div>
         <div className="navbar">
-          <a href="http://localhost:3000/" className="link-1">
+          <a href="http://localhost:3000/" className="link acceuil">
             Acceuil
           </a>
-          <a href="http://localhost:3000/" className="link-2">
+          <a href="http://localhost:3000/a-propos" className="link a propos">
             A propos
           </a>
         </div>
