@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../styles/collapsiblebuttons.css";
 
 function CollapsibleButton({ expandedText, collapsedText }) {
   const [isExpanded, setIsExpanded] = useState(false);
