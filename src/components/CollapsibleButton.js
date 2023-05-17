@@ -12,7 +12,7 @@ function CollapsibleButton({ expandedText, collapsedText }) {
         <h2>{collapsedText}</h2>
         {isExpanded && (
           <div>
-            <h3>{expandedText}</h3>
+            <p>{expandedText}</p>
           </div>
         )}
       </div>
