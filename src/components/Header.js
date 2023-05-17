@@ -19,7 +19,7 @@ function Header({ showBanner, bannerImageSrc }) {
         </div>
         <div className="navbar">
           <a href="http://localhost:3000/" className="link acceuil">
-            Acceuil
+            Accueil
           </a>
           <a href="http://localhost:3000/a-propos" className="link a propos">
             A propos
