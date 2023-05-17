@@ -1,22 +1,21 @@
 import React, { useState } from "react";
-import "../styles/collapsiblebuttons.css";
+import "../styles/collapsiblebutton.css";
 
-function CollapsibleButton({ expandedText, collapsedText }) {
+function CollapsibleButton({ collapsedText, expandedContent }) {
   const [isExpanded, setIsExpanded] = useState(false);
 
-  //   const buttonText = isExpanded ? expandedText : collapsedText;
-
   return (
-    <button onClick={() => setIsExpanded(!isExpanded)}>
-      <div>
-        <h2>{collapsedText}</h2>
-        {isExpanded && (
-          <div>
-            <p>{expandedText}</p>
-          </div>
-        )}
-      </div>
-    </button>
+    <div>
+      <button onClick={() => setIsExpanded(!isExpanded)}>
+        <h3>{collapsedText}</h3>
+        <p>^</p>
+      </button>
+      {isExpanded && (
+        <div>
+          <p>{expandedContent}</p>
+        </div>
+      )}
+    </div>
   );
 }
 

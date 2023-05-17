@@ -12,16 +12,14 @@ function LodgingPage() {
   return (
     <div>
       <Header />
-      <h1>{lodging.title}</h1>
       <img src={lodging.pictures[0]} alt={lodging.title} />
+      <h1>{lodging.title}</h1>
       <p>{lodging.location}</p>
-      <p>{lodging.equipments}</p>
-      {/* display more information here */}
       <div className="moreinfos">
-        <CollapsibleButton collapsedText="Description" expandedText={lodging.description} />
+        <CollapsibleButton collapsedText="Description" expandedContent={lodging.description} />
         <CollapsibleButton
           collapsedText="Equipements"
-          expandedText={lodging.equipments.map((equipment) => (
+          expandedContent={lodging.equipments.map((equipment) => (
             <p key={equipment}>{equipment}</p>
           ))}
         />
