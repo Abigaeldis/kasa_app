@@ -1,4 +1,9 @@
 .moreinfos {
   display: flex;
   max-height: 50px;
+  gap: 76px;
+}
+
+.moreinfos button {
+  height: 52px;
 }
