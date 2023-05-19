@@ -24,3 +24,10 @@ code {
   font-weight: bold;
   font-style: normal;
 }
+
+a:visited {
+  text-decoration: none;
+}
+a:link {
+  text-decoration: none;
+}

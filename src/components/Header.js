@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import logo from "../assets/vectorhouse.png";
 import logoK from "../assets/vectorK.png";
 import logoS from "../assets/vectorS.png";
@@ -17,13 +18,13 @@ function Header({ showBanner, bannerImageSrc }) {
           <img src={logoS} alt="LogoS" />
           <img src={logoA} alt="LogoA" />
         </div>
-        <div className="navbar">
-          <a href="http://localhost:3000/" className="link acceuil">
+        <div className="navlinks">
+          <NavLink to="/" className="link" activeclassname="active-link">
             Accueil
-          </a>
-          <a href="http://localhost:3000/a-propos" className="link a propos">
+          </NavLink>
+          <NavLink to="/a-propos" className="link" activeclassname="active-link">
             A propos
-          </a>
+          </NavLink>
         </div>
       </div>
       {showBanner && (

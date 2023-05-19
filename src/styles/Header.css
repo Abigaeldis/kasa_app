@@ -7,6 +7,12 @@ body .navbar {
 
 .navbar a {
   margin-right: 15px;
+  color: #ff6060;
+  font-size: 24px;
+}
+
+a.active.link {
+  text-decoration-line: underline;
 }
 
 .banner {
