@@ -2,14 +2,14 @@ import "../styles/card.css";
 
 function Card(props) {
   return (
-    <div className="card">
+    <a href={props.link} className="card">
       <img src={props.image} alt={props.title} />
       <div className="card-content">
-        <h3>{props.title}</h3>
+        <p>{props.title}</p>
         {/* <p>{props.description}</p> */}
-        <a href={props.link}>Learn More</a>
+        {/* <a href={props.link}>Learn More</a> */}
       </div>
-    </div>
+    </a>
   );
 }
 
