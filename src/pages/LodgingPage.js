@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import lodgingList from "../datas/lodgingList.json";
 import Header from "../components/Header";
 import CollapsibleButton from "../components/CollapsibleButton";
+import Slideshow from "../components/Slideshow";
 import "../styles/lodgingpage.css";
 
 function LodgingPage() {
@@ -12,7 +13,8 @@ function LodgingPage() {
   return (
     <div>
       <Header />
-      <img src={lodging.pictures[0]} alt={lodging.title} />
+      <Slideshow images={lodging.pictures} />
+      {/* <img src={lodging.pictures[0]} alt={lodging.title} /> */}
       <h1>{lodging.title}</h1>
       <p>{lodging.location}</p>
       <div className="moreinfos">

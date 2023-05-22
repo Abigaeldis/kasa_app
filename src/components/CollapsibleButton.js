@@ -6,7 +6,7 @@ function CollapsibleButton({ collapsedText, expandedContent }) {
 
   return (
     <div>
-      <button onClick={() => setIsExpanded(!isExpanded)}>
+      <button onClick={() => setIsExpanded(!isExpanded)} className="collaspebutton">
         <h3>{collapsedText}</h3>
         <p>^</p>
       </button>
