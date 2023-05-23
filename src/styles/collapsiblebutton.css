@@ -2,5 +2,13 @@
   display: flex;
   justify-content: space-between;
   background-color: #ff6060;
+  /* width: 100%; */
+  border-radius: 10px;
+}
+
+.buttonholder {
   width: 100%;
+}
+.collaspebutton p {
+  color: white;
 }

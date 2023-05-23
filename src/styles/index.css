@@ -25,6 +25,16 @@ code {
   font-style: normal;
 }
 
+p,
+h1,
+h2 {
+  color: #ff6060;
+}
+
+button {
+  color: white;
+}
+
 a:visited {
   text-decoration: none;
 }

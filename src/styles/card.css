@@ -1,10 +1,10 @@
 .card {
-  background-color: #ff6060;
+  background: rgb(255, 96, 96);
+  background: linear-gradient(180deg, rgba(255, 96, 96) 0%, rgba(0, 0, 0, 0.5) 100%);
   width: 340px;
   height: 340px;
   margin: auto;
   border-radius: 10px;
-  color: white;
   font-size: 18px;
 }
 
@@ -18,4 +18,5 @@
 .card p {
   padding: 20px;
   max-width: 70%;
+  color: white;
 }

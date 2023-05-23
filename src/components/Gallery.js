@@ -26,8 +26,8 @@ function Gallery() {
         ))}
       </div>
       <div className="button-container">
-        {!isExpanded && visibleCount < lodgingList.length && <button onClick={handleShowMore}>Show More</button>}
-        {isExpanded && <button onClick={handleHideContent}>Hide Content</button>}
+        {!isExpanded && visibleCount < lodgingList.length && <button onClick={handleShowMore}>Voir plus</button>}
+        {isExpanded && <button onClick={handleHideContent}>Voir moins</button>}
       </div>
     </div>
   );

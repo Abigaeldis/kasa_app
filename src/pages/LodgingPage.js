@@ -9,6 +9,7 @@ import "../styles/lodgingpage.css";
 function LodgingPage() {
   const { id } = useParams();
   const lodging = lodgingList.find((lodging) => lodging.id === id.toString());
+  const tags = lodging.tags.map((tag) => <p key={tag}>{tag}</p>);
 
   return (
     <div>
@@ -16,7 +17,8 @@ function LodgingPage() {
       <Slideshow images={lodging.pictures} />
       {/* <img src={lodging.pictures[0]} alt={lodging.title} /> */}
       <h1>{lodging.title}</h1>
-      <p>{lodging.location}</p>
+      <ul className="taglist">{tags}</ul>
+      <p>{lodging.location} </p>
       <div className="moreinfos">
         <CollapsibleButton collapsedText="Description" expandedContent={<p>{lodging.description}</p>} />
         <CollapsibleButton
