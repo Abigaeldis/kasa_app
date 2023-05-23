@@ -1,14 +1,31 @@
-.image-wrapper {
+.slideshow-container {
   position: relative;
-  height: 0;
-  padding-bottom: calc(415 / 1240 * 100%); /* Calculate aspect ratio based on the provided height and width */
+  width: 100%;
+  max-width: 1240px;
+  height: 415px;
+  margin: 0 auto;
 }
 
-.image-wrapper img {
-  position: absolute;
-  top: 0;
-  left: 0;
+.slideshow-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.previous-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  padding: 8px 16px;
+}
+
+.previous-button {
+  left: 0;
+}
+
+.next-button {
+  right: 0;
 }

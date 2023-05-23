@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import "../styles/slideshow.css";
+import previousarrow from "../assets/previousarrow.png";
+import nextarrow from "../assets/nextarrow.png";
 
 function Slideshow({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -12,10 +15,14 @@ function Slideshow({ images }) {
   };
 
   return (
-    <div>
-      <button onClick={goToPrevious}>Previous</button>
-      <img src={images[currentIndex]} alt={`Numero ${currentIndex}`} />
-      <button onClick={goToNext}>Next</button>
+    <div className="slideshow-container">
+      <button className="previous-button" onClick={goToPrevious}>
+        <img src={previousarrow} alt="previous arrow"></img>
+      </button>
+      <img className="slideshow-image" src={images[currentIndex]} alt={`Numero ${currentIndex}`} />
+      <button className="next-button" onClick={goToNext}>
+        <img src={nextarrow} alt="next arrow"></img>
+      </button>
     </div>
   );
 }
