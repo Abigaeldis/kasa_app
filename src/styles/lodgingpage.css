@@ -1,3 +1,17 @@
+.lodginginfo {
+  display: flex;
+  justify-content: space-between;
+}
+.host {
+  display: flex;
+  margin-top: 21px;
+}
+.hostrating img {
+  border-radius: 90px;
+  max-width: 64px;
+  margin-left: 10px;
+}
+
 .moreinfos {
   display: flex;
   gap: 76px;

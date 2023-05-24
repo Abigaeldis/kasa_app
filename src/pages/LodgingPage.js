@@ -15,10 +15,22 @@ function LodgingPage() {
     <div>
       <Header />
       <Slideshow images={lodging.pictures} />
-      {/* <img src={lodging.pictures[0]} alt={lodging.title} /> */}
-      <h1>{lodging.title}</h1>
-      <ul className="taglist">{tags}</ul>
-      <p>{lodging.location} </p>
+      <div className="lodginginfo">
+        <div className="titlelocationtag">
+          <h1>{lodging.title}</h1>
+          <ul className="taglist">{tags}</ul>
+          <p>{lodging.location} </p>
+        </div>
+        <div className="hostrating">
+          <div className="host">
+            <p>{lodging.host.name}</p>
+            <img src={lodging.host.picture} alt="host"></img>
+          </div>
+
+          <p>{lodging.rating}</p>
+        </div>
+      </div>
+
       <div className="moreinfos">
         <CollapsibleButton collapsedText="Description" expandedContent={<p>{lodging.description}</p>} />
         <CollapsibleButton
