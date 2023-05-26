@@ -7,6 +7,10 @@ import Slideshow from "../components/Slideshow";
 import NotFound from "../pages/NotFound";
 import "../styles/lodgingpage.css";
 
+// Import the images
+import emptyStarsImage from "../assets/emptystars.png";
+import starsImage from "../assets/stars.png";
+
 function LodgingPage() {
   const { id } = useParams();
   const lodging = lodgingList.find((lodging) => lodging.id === id.toString());
@@ -17,6 +21,22 @@ function LodgingPage() {
 
   const tags = lodging.tags.map((tag) => <p key={tag}>{tag}</p>);
 
+  const renderRatingStars = () => {
+    const fullStars = Math.floor(lodging.rating);
+    const emptyStars = 5 - fullStars;
+
+    return (
+      <div className="rating">
+        {[...Array(fullStars)].map((_, index) => (
+          <img key={`full-star-${index}`} src={starsImage} alt="full-star" />
+        ))}
+        {[...Array(emptyStars)].map((_, index) => (
+          <img key={`empty-star-${index}`} src={emptyStarsImage} alt="empty-star" />
+        ))}
+      </div>
+    );
+  };
+
   return (
     <div>
       <Header />
@@ -25,15 +45,14 @@ function LodgingPage() {
         <div className="titlelocationtag">
           <h1>{lodging.title}</h1>
           <ul className="taglist">{tags}</ul>
-          <p>{lodging.location} </p>
+          <p>{lodging.location}</p>
         </div>
         <div className="hostrating">
           <div className="host">
             <p>{lodging.host.name}</p>
             <img src={lodging.host.picture} alt="host" />
           </div>
-
-          <p>{lodging.rating}</p>
+          {renderRatingStars()}
         </div>
       </div>
 

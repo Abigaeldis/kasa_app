@@ -13,9 +13,9 @@
 
 .buttonholder {
   width: 100%;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-start; */
 }
 .collaspebutton h3 {
   font-size: 24px;
@@ -33,8 +33,9 @@
 }
 
 .expandedcontent p {
-  max-width: 978px;
-  margin: auto;
+  /* max-width: 978px; */
+  /* margin: auto; */
   font-weight: 400;
   font-size: 24px;
+  margin-left: 18px;
 }
