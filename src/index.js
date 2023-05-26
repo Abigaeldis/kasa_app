@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import APropos from "./pages/APropos";
 import NotFound from "./pages/NotFound";
 import LodgingPage from "./pages/LodgingPage";
+import Gallery from "./components/Gallery";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -14,14 +15,11 @@ root.render(
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/:id" element={<LodgingPage />} />
         <Route path="/a-propos" element={<APropos />} />
+        <Route path="/logement/:id" element={<LodgingPage />} />
+        <Route path="/logements" element={<Gallery />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals

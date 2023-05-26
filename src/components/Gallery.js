@@ -22,7 +22,7 @@ function Gallery() {
     <div>
       <div className="gallery">
         {visibleLodgingList.map((lodging) => (
-          <Card key={lodging.id} title={lodging.title} image={lodging.pictures[0]} link={`/${lodging.id}`} />
+          <Card key={lodging.id} title={lodging.title} image={lodging.pictures[0]} link={`/logement/${lodging.id}`} />
         ))}
       </div>
       <div className="button-container">
