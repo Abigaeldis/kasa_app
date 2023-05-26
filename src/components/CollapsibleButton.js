@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "../styles/collapsiblebutton.css";
+import collapseImg from "../assets/collapse.png";
+import retractImg from "../assets/retract.png";
 
 function CollapsibleButton({ collapsedText, expandedContent }) {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -8,9 +10,13 @@ function CollapsibleButton({ collapsedText, expandedContent }) {
     <div className="buttonholder">
       <button onClick={() => setIsExpanded(!isExpanded)} className="collaspebutton">
         <h3>{collapsedText}</h3>
-        <p>^</p>
+        <img src={isExpanded ? retractImg : collapseImg} alt={isExpanded ? "Retract" : "Collapse"} />
       </button>
-      {isExpanded && <div>{expandedContent}</div>}
+      {isExpanded && (
+        <div className="expandedcontent">
+          <p>{expandedContent}</p>
+        </div>
+      )}
     </div>
   );
 }
