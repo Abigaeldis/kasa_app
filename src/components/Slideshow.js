@@ -19,7 +19,7 @@ function Slideshow({ images }) {
       <button className="previous-button" onClick={goToPrevious}>
         <img src={previousarrow} alt="previous arrow"></img>
       </button>
-      <img className="slideshow-image" src={images[currentIndex]} alt={`Numero ${currentIndex}`} />
+      <img className="slideshow-image" src={images[currentIndex]} alt={``} />
       <button className="next-button" onClick={goToNext}>
         <img src={nextarrow} alt="next arrow"></img>
       </button>
