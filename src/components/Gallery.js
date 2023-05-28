@@ -25,7 +25,7 @@ function Gallery() {
           <Card key={lodging.id} title={lodging.title} image={lodging.pictures[0]} link={`/logement/${lodging.id}`} />
         ))}
       </div>
-      <div className="button-container">
+      <div className="seemorebutton">
         {!isExpanded && visibleCount < lodgingList.length && <button onClick={handleShowMore}>Voir plus</button>}
         {isExpanded && <button onClick={handleHideContent}>Voir moins</button>}
       </div>

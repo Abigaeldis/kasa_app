@@ -41,19 +41,19 @@ function LodgingPage() {
     <div>
       <Header />
       <Slideshow images={lodging.pictures} />
-      <div className="lodginginfo">
-        <div className="titlelocationtag">
+      <div className="quickinfos">
+        <div className="titleandhost">
           <h1>{lodging.title}</h1>
-          <ul className="taglist">{tags}</ul>
-          <p>{lodging.location}</p>
-        </div>
-        <div className="hostrating">
           <div className="host">
             <p>{lodging.host.name}</p>
             <img src={lodging.host.picture} alt="host" />
           </div>
+        </div>
+        <div className="titlelocationtag">
+          <ul className="taglist">{tags}</ul>
           {renderRatingStars()}
         </div>
+        <p>{lodging.location}</p>
       </div>
 
       <div className="moreinfos">
@@ -61,7 +61,7 @@ function LodgingPage() {
         <CollapsibleButton
           collapsedText="Equipements"
           expandedContent={lodging.equipments.map((equipment) => (
-            <p key={equipment}>{equipment}</p>
+            <li key={equipment}>{equipment}</li>
           ))}
         />
       </div>

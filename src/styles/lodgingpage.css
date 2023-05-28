@@ -2,14 +2,51 @@
   display: flex;
   justify-content: space-between;
 }
+
+.titlelocationtag {
+  display: flex;
+  justify-content: space-between;
+}
+.taglist {
+  display: flex;
+  gap: 10px;
+}
+.taglist p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ff6060;
+  border-radius: 10px;
+  width: 115px;
+  height: 25px;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
+
+.titleandhost {
+  display: flex;
+  justify-content: space-between;
+}
+.titleandhost h1 {
+  max-width: 635px;
+}
 .host {
   display: flex;
   margin-top: 21px;
 }
-.hostrating img {
+.host img {
   border-radius: 90px;
   max-width: 64px;
+  max-height: 64px;
   margin-left: 10px;
+}
+.host p {
+  font-size: 18px;
+}
+
+.rating {
+  margin-top: 27px;
 }
 
 .moreinfos {
@@ -29,17 +66,15 @@
   margin-top: 0;
   background: #f7f7f7;
   border-radius: 10px;
+  font-size: 18px;
+  line-height: 142.6%;
 }
 
-.taglist {
-  display: flex;
-  gap: 10px;
-}
-.taglist p {
-  background: #ff6060;
+.moreinfos li {
+  margin-top: 0;
+  background: #f7f7f7;
   border-radius: 10px;
-  width: 115px;
-  height: 25px;
-  text-align: center;
-  color: white;
+  font-size: 18px;
+  list-style: none;
+  line-height: 142.6%;
 }

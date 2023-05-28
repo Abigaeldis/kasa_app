@@ -8,9 +8,17 @@
   /* padding: 20px; */
 }
 
-.button-container {
-  margin-top: 30px;
+.seemorebutton button {
+  color: white;
+  background: rgb(255, 96, 96);
+  border-radius: 25px;
+  border-color: transparent;
+  width: 250px;
+  height: 25px;
 }
-.button-container button {
-  color: black;
+
+.seemorebutton {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
 }
