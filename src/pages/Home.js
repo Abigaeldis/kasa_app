@@ -8,7 +8,7 @@ import paysage01 from "../assets/paysage01.png";
 function Home() {
   return (
     <div>
-      <Header showBanner={true} bannerImageSrc={paysage01} />
+      <Header showBanner={true} bannerImageSrc={paysage01} bannerText="Chez vous, partout et ailleurs" />
       <Gallery />
       <Footer />
     </div>

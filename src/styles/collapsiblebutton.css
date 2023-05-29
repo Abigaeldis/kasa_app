@@ -39,3 +39,16 @@
   font-size: 24px;
   margin-left: 18px;
 }
+
+@media (max-width: 376px) {
+  .collaspebutton h3 {
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .collaspebutton img {
+    max-height: 7.91px;
+  }
+  .expandedcontent p {
+    font-size: 12px;
+  }
+}

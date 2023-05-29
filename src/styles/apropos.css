@@ -4,6 +4,26 @@
   gap: 30px;
   margin-top: 30px;
 }
+
+.apropos .buttonholder {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 .apropos button {
-  width: 100%;
+  width: 90%;
+}
+
+.apropos .expandedcontent {
+  width: 90%;
+}
+
+@media (max-width: 375px) {
+  .large-banner img {
+    height: 223px;
+  }
+  .apropos {
+    gap: 20px;
+    margin-top: 19px;
+  }
 }

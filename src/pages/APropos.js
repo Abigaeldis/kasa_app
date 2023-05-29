@@ -8,7 +8,7 @@ import "../styles/apropos.css";
 function APropos() {
   return (
     <div>
-      <Header showBanner={true} bannerImageSrc={paysage02} />
+      <Header showBanner={true} bannerImageSrc={paysage02} bannerClassName="large-banner" />
       <div className="apropos">
         <CollapsibleButton
           collapsedText="Fiabilité"
