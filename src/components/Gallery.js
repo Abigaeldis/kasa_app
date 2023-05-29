@@ -1,10 +1,10 @@
-import "../styles/gallery.css";
-import lodgingList from "../datas/lodgingList.json";
 import React, { useState } from "react";
 import Card from "./Card";
+import lodgingList from "../datas/lodgingList.json";
+import "../styles/gallery.css";
 
 function Gallery() {
-  const initialVisibleCount = 6; // Initial number of visible cards
+  const initialVisibleCount = 15; // Initial number of visible cards
   const [isExpanded, setIsExpanded] = useState(false);
   const [visibleCount, setVisibleCount] = useState(initialVisibleCount);
   const handleShowMore = () => {

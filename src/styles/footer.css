@@ -13,3 +13,16 @@
   margin-top: 10px;
   font-size: 24px;
 }
+
+@media (max-width: 1024px) {
+  .footer {
+    margin-top: 50px;
+  }
+  .footer img {
+    max-width: 122px;
+    max-height: 39px;
+  }
+  .footer p {
+    font-size: 12px;
+  }
+}

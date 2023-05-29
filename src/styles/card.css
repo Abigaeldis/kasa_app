@@ -1,7 +1,7 @@
 .card {
   background: rgb(255, 96, 96);
   background: linear-gradient(180deg, rgba(255, 96, 96) 70%, rgb(255, 96, 96, 1) 100%);
-  width: 340px;
+  max-width: 340px;
   height: 340px;
   margin: auto;
   border-radius: 10px;

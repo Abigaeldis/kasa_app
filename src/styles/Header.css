@@ -31,6 +31,7 @@ a.active.link {
   font-style: normal;
   font-weight: 500;
   font-size: 48px;
+  padding: 16px;
 }
 
 .banner img {
@@ -39,4 +40,36 @@ a.active.link {
   border-radius: 25px;
   object-fit: cover;
   filter: brightness(70%);
+}
+
+@media (max-width: 375px) {
+  .logokasa img:first-child {
+    height: 44px;
+  }
+
+  .logokasa img:not(:first-child) {
+    height: 33px;
+  }
+
+  .navlinks a {
+    font-size: 12px;
+  }
+
+  .banner {
+    justify-content: flex-start;
+  }
+
+  .banner img {
+    height: 111px;
+  }
+
+  .banner p {
+    font-size: 24px;
+    padding: 16px;
+    max-width: 217px;
+  }
+
+  body .navbar {
+    padding: 20px 0;
+  }
 }
