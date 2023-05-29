@@ -42,18 +42,18 @@ function LodgingPage() {
       <Header />
       <Slideshow images={lodging.pictures} />
       <div className="quickinfos">
-        <div className="titleandhost">
+        <div className="title-locations">
           <h1>{lodging.title}</h1>
+          <p>{lodging.location}</p>
+          <ul className="taglist">{tags}</ul>
+        </div>
+        <div className="hostinfos">
           <div className="host">
             <p>{lodging.host.name}</p>
             <img src={lodging.host.picture} alt="host" />
           </div>
-        </div>
-        <div className="titlelocationtag">
-          <ul className="taglist">{tags}</ul>
           {renderRatingStars()}
         </div>
-        <p>{lodging.location}</p>
       </div>
 
       <div className="moreinfos">

@@ -1,15 +1,30 @@
-.lodginginfo {
+/* .lodginginfo {
   display: flex;
+  justify-content: space-between;
+} */
+.quickinfos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hostinfos {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-locations {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
-.titlelocationtag {
-  display: flex;
-  justify-content: space-between;
+.title-locations p {
+  margin: 0;
 }
 .taglist {
   display: flex;
   gap: 10px;
+  padding: 0;
 }
 .taglist p {
   display: flex;
@@ -24,16 +39,11 @@
   font-size: 14px;
 }
 
-.titleandhost {
-  display: flex;
-  justify-content: space-between;
-}
-.titleandhost h1 {
+.title-locations h1 {
   max-width: 635px;
 }
 .host {
   display: flex;
-  margin-top: 21px;
 }
 .host img {
   border-radius: 90px;
@@ -43,10 +53,6 @@
 }
 .host p {
   font-size: 18px;
-}
-
-.rating {
-  margin-top: 27px;
 }
 
 .moreinfos {
@@ -77,4 +83,34 @@
   font-size: 18px;
   list-style: none;
   line-height: 142.6%;
+}
+
+@media (max-width: 376px) {
+  .quickinfos {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hostinfos {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .rating img {
+    max-width: 13px;
+  }
+  .host {
+    align-items: center;
+  }
+  .host img {
+    max-width: 32px;
+  }
+  .host p {
+    font-size: 12px;
+  }
+
+  .moreinfos {
+    flex-direction: column;
+  }
 }
