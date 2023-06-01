@@ -6,17 +6,19 @@ import retractImg from "../assets/retract.png";
 function CollapsibleButton({ collapsedText, expandedContent }) {
   const [isExpanded, setIsExpanded] = useState(false);
 
+  const handleButtonClick = () => {
+    setIsExpanded(!isExpanded);
+  };
+
   return (
     <div className="buttonholder">
-      <button onClick={() => setIsExpanded(!isExpanded)} className="collaspebutton">
+      <button onClick={handleButtonClick} className={`collaspebutton ${isExpanded ? "expanded" : ""}`}>
         <h3>{collapsedText}</h3>
         <img src={isExpanded ? retractImg : collapseImg} alt={isExpanded ? "Retract" : "Collapse"} />
       </button>
-      {isExpanded && (
-        <div className="expandedcontent">
-          <p>{expandedContent}</p>
-        </div>
-      )}
+      <div className={`expandedcontent ${isExpanded ? "show" : ""}`}>
+        <p>{expandedContent}</p>
+      </div>
     </div>
   );
 }
