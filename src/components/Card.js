@@ -6,8 +6,6 @@ function Card(props) {
       <img src={props.image} alt={props.title} />
       <div className="card-content">
         <p>{props.title}</p>
-        {/* <p>{props.description}</p> */}
-        {/* <a href={props.link}>Learn More</a> */}
       </div>
     </a>
   );

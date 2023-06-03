@@ -14,7 +14,7 @@ function Slideshow({ images }) {
     setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
   };
 
-  const showArrows = images.length > 1; // Check if there is more than one image
+  const showArrows = images.length > 1;
 
   return (
     <div className="slideshow-container">

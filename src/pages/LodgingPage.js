@@ -7,7 +7,6 @@ import Slideshow from "../components/Slideshow";
 import NotFound from "../pages/NotFound";
 import "../styles/lodgingpage.css";
 
-// Import the images
 import emptyStarsImage from "../assets/emptystars.png";
 import starsImage from "../assets/stars.png";
 
