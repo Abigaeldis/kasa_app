@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import "../styles/notfound.css";
 import { NavLink } from "react-router-dom";
 
@@ -14,6 +15,7 @@ function NotFound() {
           <p>Retourner sur la page d’accueil</p>
         </NavLink>
       </div>
+      <Footer />
     </div>
   );
 }
