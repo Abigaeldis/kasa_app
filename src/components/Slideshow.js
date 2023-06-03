@@ -14,15 +14,21 @@ function Slideshow({ images }) {
     setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
   };
 
+  const showArrows = images.length > 1; // Check if there is more than one image
+
   return (
     <div className="slideshow-container">
-      <button className="previous-button" onClick={goToPrevious}>
-        <img src={previousarrow} alt="previous arrow"></img>
-      </button>
+      {showArrows && (
+        <button className="previous-button" onClick={goToPrevious}>
+          <img src={previousarrow} alt="previous arrow"></img>
+        </button>
+      )}
       <img className="slideshow-image" src={images[currentIndex]} alt={``} />
-      <button className="next-button" onClick={goToNext}>
-        <img src={nextarrow} alt="next arrow"></img>
-      </button>
+      {showArrows && (
+        <button className="next-button" onClick={goToNext}>
+          <img src={nextarrow} alt="next arrow"></img>
+        </button>
+      )}
     </div>
   );
 }

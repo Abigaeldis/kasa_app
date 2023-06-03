@@ -16,10 +16,10 @@ function Header({ showBanner, bannerImageSrc, bannerText, bannerClassName }) {
           <img src={logoA} alt="LogoA" />
         </div>
         <div className="navlinks">
-          <NavLink to="/" className="link" activeClassName="active-link">
+          <NavLink to="/" className="link" activeclassname="active-link">
             Accueil
           </NavLink>
-          <NavLink to="/a-propos" className="link" activeClassName="active-link">
+          <NavLink to="/a-propos" className="link" activeclassname="active-link">
             A propos
           </NavLink>
         </div>
