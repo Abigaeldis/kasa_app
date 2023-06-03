@@ -24,3 +24,17 @@
   color: #ff6060;
   margin-top: 182px;
 }
+
+@media (max-width: 480px) {
+  .notfound h1 {
+    font-size: 96px;
+    margin-top: 198px;
+  }
+  .errormessage {
+    font-size: 18px;
+  }
+  .nav-active.homeLink {
+    font-size: 14px;
+    margin-top: 133px;
+  }
+}

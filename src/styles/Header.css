@@ -42,7 +42,10 @@ a.active.link {
   filter: brightness(70%);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 480px) {
+  .navbar a {
+    font-size: 12px;
+  }
   .logokasa img:first-child {
     height: 44px;
   }

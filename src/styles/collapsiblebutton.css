@@ -22,16 +22,6 @@
   font-weight: 500;
 }
 
-/* .expandedcontent {
-  background: #f7f7f7;
-  color: #ff6060;
-  border-radius: 5px;
-  margin-top: -10px;
-  padding-top: 27px;
-  padding-bottom: 19px;
-  width: 100%;
-} */
-
 /*animation*/
 .expandedcontent {
   background: #f7f7f7;
@@ -50,14 +40,12 @@
 }
 
 .expandedcontent p {
-  /* max-width: 978px; */
-  /* margin: auto; */
   font-weight: 400;
   font-size: 24px;
   margin-left: 18px;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 480px) {
   .collaspebutton h3 {
     font-size: 13px;
     font-weight: 500;
@@ -69,5 +57,3 @@
     font-size: 12px;
   }
 }
-
-/* animation */

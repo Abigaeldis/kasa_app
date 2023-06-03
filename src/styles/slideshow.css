@@ -29,3 +29,16 @@
 .next-button {
   right: 0;
 }
+
+@media (max-width: 480px) {
+  .slideshow-container {
+    height: 255px;
+  }
+
+  .next-button img {
+    height: 19.8px;
+  }
+  .previous-button img {
+    height: 19.8px;
+  }
+}

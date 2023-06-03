@@ -87,7 +87,7 @@
   line-height: 142.6%;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 480px) {
   .quickinfos {
     flex-direction: column;
     align-items: stretch;
@@ -98,6 +98,7 @@
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 16.5px;
   }
   .rating img {
     max-width: 13px;
@@ -115,5 +116,14 @@
   .moreinfos {
     flex-direction: column;
     gap: 26px;
+  }
+  .buttonholder p {
+    font-size: 12px;
+    margin-left: 11px;
+  }
+  .buttonholder li {
+    font-size: 12px;
+    margin-left: 11px;
+    margin-top: 5px;
   }
 }
