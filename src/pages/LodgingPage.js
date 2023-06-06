@@ -56,7 +56,7 @@ function LodgingPage() {
       </div>
 
       <div className="moreinfos">
-        <CollapsibleButton collapsedText="Description" expandedContent={<p>{lodging.description}</p>} />
+        <CollapsibleButton collapsedText="Description" expandedContent={lodging.description} />
         <CollapsibleButton
           collapsedText="Equipements"
           expandedContent={lodging.equipments.map((equipment) => (
