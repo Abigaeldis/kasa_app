@@ -18,6 +18,9 @@ function Slideshow({ images }) {
 
   return (
     <div className="slideshow-container">
+      <div className="slide-indication">
+        {currentIndex + 1}/{images.length}
+      </div>
       {showArrows && (
         <button className="previous-button" onClick={goToPrevious}>
           <img src={previousarrow} alt="previous arrow"></img>

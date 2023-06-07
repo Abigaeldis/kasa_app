@@ -31,6 +31,17 @@
   right: 0;
 }
 
+.slide-indication {
+  cursor: default;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  padding: 8px 0px;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+
 @media (max-width: 480px) {
   .slideshow-container {
     height: 255px;
@@ -41,5 +52,8 @@
   }
   .previous-button img {
     height: 19.8px;
+  }
+  .slide-indication {
+    display: none;
   }
 }
